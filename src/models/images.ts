@@ -22,7 +22,7 @@ const PhotoShema = z.object({
 })
 
 export const ImageSchemaWithPhotos = BascisImageSchema.extend({
-    photo: z.array(PhotoShema)
+    photos: z.array(PhotoShema)
 })
 
 export type Photo = z.infer<typeof PhotoShema>

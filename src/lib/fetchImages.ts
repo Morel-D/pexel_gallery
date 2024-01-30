@@ -12,8 +12,6 @@ Promise<ImageResults | undefined>
             
             }})
 
-            console.log("We are building bro");
-
             if(!res.ok)
             {
                 throw new Error("Fetch Image Error ! \n");
@@ -21,7 +19,7 @@ Promise<ImageResults | undefined>
 
             const imageResults: ImageResults = await res.json();
 
-            // console.log(imageResults);
+            console.log(imageResults);
 
             // Parse data with Zod schema
 
