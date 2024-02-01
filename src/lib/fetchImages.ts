@@ -19,7 +19,7 @@ Promise<ImageResults | undefined>
 
             const imageResults: ImageResults = await res.json();
 
-            console.log(imageResults);
+            // console.log(imageResults);
 
             // Parse data with Zod schema
 

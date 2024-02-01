@@ -1,6 +1,7 @@
 import fetchImage from "@/lib/fetchImages";
 import type { ImageResults } from "@/models/images";
 import React from 'react'
+import ImgContainer from "./imageContainer";
 
 export default async function Gallery() {
 
@@ -14,7 +15,7 @@ export default async function Gallery() {
     <section>
         <div className="row row-cols-lg-5 row-cols-md-3 row-cols-2 p-2 d-flex justify-content-center">
             {images.photos.map(photo => (
-                <div className="col mx-1 mb-1 bg-light py-5" key={photo.id}></div>
+              <ImgContainer photo={photo} />
             ))}
         </div>    
     </section>
